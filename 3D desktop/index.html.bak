@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="threeJs/three.js"></script>
+    <script type="text/javascript" src="threeJs/project.js"></script>
+
+    <title>Marvel VS DC</title>
+</head>
+
+<body>
+	<div class ='container'>
+		<button type = "submit" class = "btn" onclick="openPopup()">Instructions</button>
+		<div class = "popup" id="popup">
+			<img src="textures/tick.jpg">
+			<h2>W,S,A,D for Forward, Backward, Left, Right</h2>
+			<p>Q,E,T,V,I,N,O,M for changing positions</p>
+			<button type = "button" onclick="closePopup()">OK</button>
+		</div>
+	</div>
+	
+	
+
+
+    
+<script>
+	let popup = document.getElementById("popup");
+	
+	function openPopup(){
+		popup.classList.add("open-popup");
+	
+	
+	}
+	
+	function closePopup(){
+		popup.classList.add("close-popup");
+	
+	
+	}
+
+
+</script>	
+	
+
+</body>
+
+</html>
